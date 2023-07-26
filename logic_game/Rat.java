@@ -11,9 +11,15 @@ public class Rat extends Actor
      
     public void act()
     {
-        // Add your action code here.
+        if (Greenfoot.mouseClicked(this)) {
+            onClick();
+        }
     }
     public int getXPosition() {
         return getX();
+    }
+    public void onClick(){
+        Button button = (Button) getWorld().getObjects(Button.class).get(0); // Assuming there's only one Snake
+        button.setSelected(2);
     }
 }

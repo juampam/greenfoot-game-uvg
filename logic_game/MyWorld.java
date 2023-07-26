@@ -17,6 +17,7 @@ public class MyWorld extends World {
         int ratX = rat.getXPosition();
          Button button = new Button(" Mover ");
          addObject(button, 300, 350);
+         int selected = 0; // 1: snake, 2: rat, 3: cheese
     }
 }
 

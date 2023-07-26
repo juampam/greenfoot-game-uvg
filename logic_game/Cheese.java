@@ -9,11 +9,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Cheese extends Actor
 {
     public void act() {
-    checkCollisions();
+        if (Greenfoot.mouseClicked(this)) {
+            onClick();
+        }
 }
 
-public void checkCollisions() {
-          
-}
-
+public void onClick(){
+        Button button = (Button) getWorld().getObjects(Button.class).get(0); // Assuming there's only one Snake
+        button.setSelected(3);
+    }
 }
