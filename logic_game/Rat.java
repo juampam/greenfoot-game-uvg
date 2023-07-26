@@ -19,7 +19,7 @@ public class Rat extends Actor
         return getX();
     }
     public void onClick(){
-        Button button = (Button) getWorld().getObjects(Button.class).get(0); // Assuming there's only one Snake
+        Button button = (Button) getWorld().getObjects(Button.class).get(0); 
         button.setSelected(2);
     }
 }

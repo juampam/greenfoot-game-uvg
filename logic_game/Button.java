@@ -23,11 +23,10 @@ public class Button extends Actor {
         this.selected = newsel;
       }
     public void onClick() {
-        // Implement the action you want the button to perform here
-        // For example, change the position of the Snake when the button is clicked
+       
         switch(selected){
         case 1:
-             Snake snake = (Snake) getWorld().getObjects(Snake.class).get(0); // Assuming there's only one Snake
+             Snake snake = (Snake) getWorld().getObjects(Snake.class).get(0); 
             if(snake.getX() == 100){
                 snake.setLocation(500,100);
             }else{
@@ -35,7 +34,7 @@ public class Button extends Actor {
             }
         break;
         case 2:
-            Rat rat = (Rat) getWorld().getObjects(Rat.class).get(0); // Assuming there's only one Snake
+            Rat rat = (Rat) getWorld().getObjects(Rat.class).get(0); 
              if(rat.getX() == 100){
                 rat.setLocation(500,200);
             }else{
@@ -43,7 +42,7 @@ public class Button extends Actor {
             }
         break;
         case 3:
-             Cheese cheese = (Cheese) getWorld().getObjects(Cheese.class).get(0); // Assuming there's only one Snake
+             Cheese cheese = (Cheese) getWorld().getObjects(Cheese.class).get(0); 
              if(cheese.getX() == 100){
                 cheese.setLocation(500,300);
             }else{

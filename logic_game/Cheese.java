@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class cheese here.
+ * Forget about sheeps and wolves.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Juampa Muralles, Gustavo Joge
+ * @version 3.0
  */
 public class Cheese extends Actor
 {
@@ -15,7 +15,7 @@ public class Cheese extends Actor
 }
 
 public void onClick(){
-        Button button = (Button) getWorld().getObjects(Button.class).get(0); // Assuming there's only one Snake
+        Button button = (Button) getWorld().getObjects(Button.class).get(0);
         button.setSelected(3);
     }
 }
